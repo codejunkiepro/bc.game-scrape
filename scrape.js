@@ -6,7 +6,7 @@ puppeteer.use(StealthPlugin());
 
 (async () => {
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         // executablePath: path.join(__dirname, "./chrome-win64/chrome.exe"),
         userDataDir: path.join(__dirname, "./chrome/userdata"),
         // args: [
