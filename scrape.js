@@ -9,6 +9,7 @@ puppeteer.use(StealthPlugin());
         headless: true,
         // executablePath: path.join(__dirname, "./chrome-win64/chrome.exe"),
         userDataDir: path.join(__dirname, "./chrome/userdata"),
+        args: ['--no-sandbox', '--disable-setuid-sandbox'] // Add these flags to run as root
         // args: [
         //     '--no-sandbox',
         //     '--disable-setuid-sandbox',
